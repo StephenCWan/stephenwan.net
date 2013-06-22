@@ -7,5 +7,5 @@ var port = process.env.PORT | 8000;
 app.use(express.static(path.join(__dirname + "/../app")));
 
 app.listen(port, function() {
-	console.log("launching stephenwan.net on port " + port);
+	console.log("Launching stephenwan.net on port " + port);
 });
