@@ -1,0 +1,20 @@
+{
+  "name": "stephenwan.net",
+  "preferGlobal": false,
+  "private": true,
+  "version": "0.0.1",
+  "author": "Stephen Wan <stephen@stephenwan.net>",
+  "description": "stephen wan's personal website",
+  "contributors": [{
+    "name": "Stephen Wan",
+    "email": "stephen@stephenwan.net"
+  }],
+  "main": "./webserver/app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stephencwan/stephenwan.net.git"
+  },
+  "dependencies" : {
+    "express" : "*"
+  }
+}
