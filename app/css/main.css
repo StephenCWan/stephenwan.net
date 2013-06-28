@@ -1,5 +1,12 @@
+/*
+#3498DB
+PETER RIVER
+#2980B9
+BELIZE HOLE
+*/
+
 body {
-   font-family: "Roboto", Helvetica;
+   font-family: 'Roboto', 'Helvetica Neue', Helvetica;
    font-weight: 300;
 }
 
@@ -8,7 +15,7 @@ header h1, header h5 {
 }
 
 header h1 {
-	font-family: 'Roboto Condensed', Helvetica, sans-serif;
+	font-family: 'Roboto Condensed', 'Helvetica Neue', Helvetica, sans-serif;
 	font-size: 3em;
 	line-height: .9em;
 }
@@ -26,4 +33,20 @@ header h5 {
 	margin: 0 auto;
 }
 
+.cross-section.inverse
+{
+	color: #fff;
+	background-color: #333;
+}
+.cross-section.text-block
+{
+	text-align: center;
+	margin: 5px 0px;
+}
+
 /* add media queries for .cross-section sizes */
+
+#aboutme
+{
+	background-color: #2980B9;
+}
