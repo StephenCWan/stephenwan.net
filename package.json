@@ -14,7 +14,13 @@
     "type": "git",
     "url": "https://github.com/stephencwan/stephenwan.net.git"
   },
+  "scripts" : {
+    "test" : ""
+  },
   "dependencies" : {
     "express" : "*"
+  },
+  "devDependencies" : {
+    "mocha" : "*"
   }
 }
