@@ -44,26 +44,25 @@ header a {
 nav > a.nav-link {
 	margin: 40px 0px;
 	display: inline-block;
-	transition: transform .1s ease-in-out, color .1s;
-	-webkit-transition: -webkit-transform .1s ease-in-out, color .1s;
-
+	transition: transform .1s, color .1s, fill .1s;
+	-webkit-transition: -webkit-transform .1s, color .1s, fill .1s;
 }
 
 nav > a.nav-link:hover, nav a.nav-link:active {
 	transform: scale(1.1);
 	-webkit-transform: scale(1.1);
 	color: #3498DB;
-	cursor: pointer;
+	fill: #3498DB;
 }
 
-nav a.nav-link span {
+nav a.nav-link span:nth-child(2) {
 	text-transform: uppercase;
 	display: block;
 	text-align: center;
 	line-height: 20px;
 }
 
-nav .icon {
+nav .icon svg {
 	display: block;
 	margin: 0 auto;
 	width: 50px;
