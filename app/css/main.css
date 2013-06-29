@@ -86,7 +86,7 @@ header.cross-section .container {
 
 .cross-section.inverse {
 	color: #fff;
-	background-color: #333;
+	background-color: #2980B9;
 }
 
 .avatar {
@@ -99,6 +99,10 @@ header.cross-section .container {
 	box-shadow: inset 0px 0px 20px #333;
 }
 
-#aboutme {
-	background-color: #2980B9;
+.text-block .container {
+	width: 800px;
 }
+
+.text-block h1, .text-block h2, .text-block h3, .text-block h4, .text-block h5, .text-block h6 {
+	text-align: center;
+} 
