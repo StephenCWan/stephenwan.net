@@ -10,7 +10,7 @@ body {
    font-weight: 400;
 }
 
-header {
+h1, h2, h3, h4, h5, h6, header {
 	font-family: 'Roboto Condensed', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
@@ -35,8 +35,11 @@ header h5 {
 	line-height: 1.5em;
 }
 
-header .title {
+header a {
 	text-decoration: none;
+}
+
+header .title {
 	display: block;
 	color: inherit;
 	padding: 10px 0px;
@@ -51,8 +54,8 @@ nav {
 nav li {
 	display: inline-block;
 	margin: 0px 10px;
-	transition: transform .1s, color .1s;
-	-webkit-transition: -webkit-transform .1s, color .1s;
+	transition: transform .1s ease-in-out, color .1s;
+	-webkit-transition: -webkit-transform .1s ease-in-out, color .1s;
 }
 
 nav li:hover, nav li:active {
@@ -84,7 +87,8 @@ nav .icon {
 }
 
 .cross-section .container {
-	width: 1170px;
+	width: 1150px;
+	padding: 0px 25px;
 	margin: 0 auto;
 }
 
@@ -93,17 +97,9 @@ nav .icon {
 	background-color: #333;
 }
 
-.cross-section.text-block {
-	text-align: center;
-	padding: 5px 0px;
-}
-
 .avatar {
-	height: 100px; /* media */
-	width: 100px; /* media */
-	margin: 0 auto;
-}
-.avatar {
+	width: 100px;
+	height: 100px;
 	margin-top: 0;
 	display: block;
 	border-radius: 50em;
