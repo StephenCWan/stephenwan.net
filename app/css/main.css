@@ -48,7 +48,7 @@ nav > a.nav-link {
 	-webkit-transition: -webkit-transform .1s, color .1s, fill .1s;
 }
 
-nav > a.nav-link:hover, nav a.nav-link:active {
+nav > a.nav-link:hover, nav a.nav-link:active, nav a.current {
 	transform: scale(1.1);
 	-webkit-transform: scale(1.1);
 	color: #3498DB;
