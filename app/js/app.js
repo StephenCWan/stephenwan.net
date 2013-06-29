@@ -18,16 +18,14 @@ angular.module('stephenwan', ['ui.state', 'ng'])
 	});
 
 }).controller('navigationCtrl', ['$scope', '$http', function($scope, $http) {
-	$http({ method: "GET", url: "img/cloud.svg" }).success(function(data) {
-		$scope.cloud = data;
-	});
-	$http({ method: "GET", url: "img/ironman.svg" }).success(function(data) {
-		$scope.ironman = data;
-	});
-	$http({ method: "GET", url: "img/camera.svg" }).success(function(data) {
-		$scope.camera = data;
-	});
-	$http({ method: "GET", url: "img/airplane.svg" }).success(function(data) {
-		$scope.airplane = data;
-	});
+	var loadResource = function(resource, identifier) {
+		$http({ method: "GET", url: resource }).success(function(data) {
+			$scope[identifier] = data;
+		});
+	};
+
+	loadResource("img/cloud.svg", "cloud");
+	loadResource("img/ironman.svg", "ironman");
+	loadResource("img/camera.svg", "camera");
+	loadResource("img/airplane.svg", "airplane");
 }]);
