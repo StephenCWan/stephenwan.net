@@ -1,7 +1,10 @@
 angular.module('stephenwan', ['ui.state', 'ng'])
 .config(function($stateProvider, $routeProvider, $locationProvider) {
+
+	$locationProvider.html5Mode(true);
+
 	$stateProvider.state('index', {
-		url: "",
+		url: "/",
 		templateUrl: "partials/home.html"
 	}).state('blog', {
 		abstract: true,
