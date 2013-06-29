@@ -1,11 +1,21 @@
 angular.module('stephenwan', ['ui.state', 'ng'])
 .config(function($stateProvider, $routeProvider, $locationProvider) {
+
+	$locationProvider.html5Mode(true);
+
 	$stateProvider.state('index', {
-		url: "",
+		url: "/",
 		templateUrl: "partials/home.html"
 	}).state('blog', {
+		abstract: true,
 		url: "/blog",
-		templateUrl: "partials/blog.html"
+		template: "<div data-ui-view></div>"
+	}).state('blog.main', {
+		url: "",
+		templateUrl: "partials/blog/main.html"
+	}).state('blog.post', {
+		url: "/:id",
+		templateUrl: "partials/blog/post.html"
 	}).state('projects', {
 		url: "/projects",
 		templateUrl: "partials/projects.html"
