@@ -13,45 +13,29 @@
   <body>
     <header class="pure-g-r cross-section" style="background-color: #f7f7f7;">
         <div class="container">
-            <div class="pure-u-1-8">
-                <a href="#" class="avatar" style="background-image: url('img/stephen.jpg');"></a>
-            </div>
-            <div class="pure-u-3-8">
-                <a href="#" class="title">
+            <nav data-ng-controller="navigationCtrl">
+                <a href="#/blog" class="pure-u-1-8 nav-link">
+                    <span data-ng-bind-html-unsafe="cloud" class="icon"></span>
+                    <span>Blog</span>
+                </a>
+                <a href="#/projects" class="pure-u-1-8 nav-link">
+                    <span data-ng-bind-html-unsafe="ironman" class="icon"></span>
+                    <span>Projects</span>
+                </a>
+                <a href="/" class="pure-u-1-2 nav-main">
+                    <span class="avatar" style="background-image: url('img/stephen.jpg');"></span>
                     <h5>hi, my name is</h5>
                     <h1>STEPHEN WAN</h1>
                 </a>
-            </div>
-            <div class="pure-u-1-2">
-                <nav>
-                    <ul>
-                        <a href="#/blog">
-                            <li>
-                                <img src="img/cloud.svg" alt="blog" class="icon" />
-                                <span>Blog</span>
-                            </li>
-                        </a>
-                        <a href="#/projects">
-                            <li>
-                                <img src="img/ironman.svg" alt="blog" class="icon" />
-                                <span>Projects</span>
-                            </li>
-                        </a>
-                        <a href="#/gallery">
-                            <li>
-                                <img src="img/camera.svg" alt="blog" class="icon" />
-                                <span>Gallery</span>
-                            </li>
-                        </a>
-                        <a href="#/contact">
-                            <li>
-                                <img src="img/airplane.svg" alt="blog" class="icon" />
-                                <span>Contact</span>
-                            </li>
-                        </a>
-                    </ul>
-                </nav>
-            </div>
+                <a href="#/gallery" class="pure-u-1-8 nav-link">
+                    <span data-ng-bind-html-unsafe="camera" class="icon"></span>
+                    <span>Gallery</span>
+                </a>
+                <a href="#/contact" class="pure-u-1-8 nav-link">
+                    <span data-ng-bind-html-unsafe="airplane" class="icon"></span>
+                    <span>Contact</span>
+                </a>
+            </nav>
         </div>
     </header>
 
