@@ -1,7 +1,6 @@
 stephenwan.net
 ==============
-
-personal website
+Live @ http://beta.stephenwan.net/
 
 Attributions
 ------------
