@@ -83,9 +83,25 @@ header.cross-section .container {
 	width: 900px;
 }
 
-.cross-section.inverse {
+.cross-section a {
+	color: #333;
+	transition: color .1s;
+}
+.cross-section a:hover, .cross-section a:active {
+	color: #000;
+}
+
+.inverse {
 	color: #fff;
 	background-color: #2980B9;
+}
+
+.inverse a {
+	color: #ddd;
+}
+
+.inverse a:hover, .inverse a:active {
+	color: #fff;
 }
 
 .avatar {
