@@ -18,7 +18,8 @@
     "test" : ""
   },
   "dependencies" : {
-    "express" : "*"
+    "express" : "*",
+    "request" : "*"
   },
   "devDependencies" : {
     "mocha" : "*"

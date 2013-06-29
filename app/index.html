@@ -15,10 +15,7 @@
     <header class="pure-g-r cross-section" style="background-color: #f7f7f7;">
         <div class="container">
             <nav data-ng-controller="navigationCtrl">
-                <a href="/blog" class="pure-u-1-8 nav-link">
-                    <span data-ng-bind-html-unsafe="cloud" class="icon"></span>
-                    <span>Blog</span>
-                </a>
+                <nav-link data-link="/blog" data-title="Blog" data-icon="cloud"></nav-link>
                 <a href="/projects" class="pure-u-1-8 nav-link">
                     <span data-ng-bind-html-unsafe="ironman" class="icon"></span>
                     <span>Projects</span>
@@ -49,6 +46,7 @@
 
     <script src="js/vendor/angular.min.js"></script>
     <script src="js/vendor/angular-ui-router.min.js"></script>
+    <script src="js/directives/navLinkDirective.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
