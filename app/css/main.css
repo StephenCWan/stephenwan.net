@@ -7,7 +7,11 @@ BELIZE HOLE
 
 body {
    font-family: 'Roboto', 'Helvetica Neue', Helvetica;
-   font-weight: 300;
+   font-weight: 400;
+}
+
+header {
+	font-family: 'Roboto Condensed', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 header h1, header h5 {
@@ -15,13 +19,64 @@ header h1, header h5 {
 }
 
 header h1 {
-	font-family: 'Roboto Condensed', 'Helvetica Neue', Helvetica, sans-serif;
 	font-size: 3em;
 	line-height: .9em;
+	color: #2980B9;
+	transition: color .1s;
+	-webkit-transition: color .1s;
+}
+
+header h1:hover, header h1:active {
+	color: #3498DB;
 }
 
 header h5 {
-	font-weight: 300;
+	font-weight: 400;
+	line-height: 1.5em;
+}
+
+header .title {
+	text-decoration: none;
+	display: block;
+	color: inherit;
+	padding: 10px 0px;
+	height: 80px;
+}
+
+nav {
+	float: right;
+	clear: both;
+}
+
+nav li {
+	display: inline-block;
+	margin: 0px 10px;
+	transition: transform .1s, color .1s;
+	-webkit-transition: -webkit-transform .1s, color .1s;
+}
+
+nav li:hover, nav li:active {
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	color: #3498DB;
+	cursor: pointer;
+}
+
+nav li img {
+	fill: #ffdfdf;
+}
+
+nav li span {
+	text-transform: uppercase;
+	display: block;
+	text-align: center;
+}
+
+nav .icon {
+	display: block;
+	margin: 0 auto;
+	width: 40px;
+	height: 40px;
 }
 
 .cross-section {
@@ -29,24 +84,33 @@ header h5 {
 }
 
 .cross-section .container {
-	width: 1100px;
+	width: 1170px;
 	margin: 0 auto;
 }
 
-.cross-section.inverse
-{
+.cross-section.inverse {
 	color: #fff;
 	background-color: #333;
 }
-.cross-section.text-block
-{
+
+.cross-section.text-block {
 	text-align: center;
-	margin: 5px 0px;
+	padding: 5px 0px;
 }
 
-/* add media queries for .cross-section sizes */
+.avatar {
+	height: 100px; /* media */
+	width: 100px; /* media */
+	margin: 0 auto;
+}
+.avatar {
+	margin-top: 0;
+	display: block;
+	border-radius: 50em;
+	background-size: cover;
+	box-shadow: inset 0px 0px 20px #333;
+}
 
-#aboutme
-{
+#aboutme {
 	background-color: #2980B9;
 }
