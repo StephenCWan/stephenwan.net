@@ -111,11 +111,11 @@ header.cross-section .container {
 	display: block;
 	border-radius: 50em;
 	background-size: cover;
-	box-shadow: inset 0px 0px 20px #333;
+	box-shadow: inset 0px 0px 10px #333;
 }
 
 .text-block .container {
-	width: 800px;
+	width: 850px;
 }
 
 .text-block h1, .text-block h2, .text-block h3, .text-block h4, .text-block h5, .text-block h6 {
