@@ -15,27 +15,15 @@
     <header class="pure-g-r cross-section" style="background-color: #f7f7f7;">
         <div class="container">
             <nav data-ng-controller="navigationCtrl">
-                <a href="/blog" class="pure-u-1-8 nav-link">
-                    <span data-ng-bind-html-unsafe="cloud" class="icon"></span>
-                    <span>Blog</span>
-                </a>
-                <a href="/projects" class="pure-u-1-8 nav-link">
-                    <span data-ng-bind-html-unsafe="ironman" class="icon"></span>
-                    <span>Projects</span>
-                </a>
+                <nav-link data-link="/blog" data-icon-ref="img/cloud.svg" data-title="Blog"></nav-link>
+                <nav-link data-link="/projects" data-icon-ref="img/ironman.svg" data-title="Projects"></nav-link>
                 <a href="/" class="pure-u-1-2 nav-main">
                     <span class="avatar" style="background-image: url('img/stephen.jpg');"></span>
                     <h5>hi, my name is</h5>
                     <h1>STEPHEN WAN</h1>
                 </a>
-                <a href="/gallery" class="pure-u-1-8 nav-link">
-                    <span data-ng-bind-html-unsafe="camera" class="icon"></span>
-                    <span>Gallery</span>
-                </a>
-                <a href="/contact" class="pure-u-1-8 nav-link">
-                    <span data-ng-bind-html-unsafe="airplane" class="icon"></span>
-                    <span>Contact</span>
-                </a>
+                <nav-link data-link="/gallery" data-icon-ref="img/camera.svg" data-title="Gallery"></nav-link>
+                <nav-link data-link="/contact" data-icon-ref="img/airplane.svg" data-title="Contact"></nav-link>
             </nav>
         </div>
     </header>
