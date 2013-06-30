@@ -18,10 +18,15 @@ app.listen(port, "0.0.0.0", function() {
 	console.log("Launching stephenwan.net on port " + port);
 });
 
-setInterval(function() {
-	request("http://beta.stephenwan.net", function(error, response, body) {
-		if (error || response.statusCode != 200) {
-			console.error("failed to ping server");
-		}
-	});
-}, 3600000);
+var startSelfPing = function(url) {
+	setInterval(function() {
+		request(url, function(error, response, body) {
+			if (error || response.statusCode != 200) {
+				console.error("failed to ping server");
+			}
+		});
+	}, 3540000);
+};
+
+var url = "http://beta.stephenwan.net";
+startSelfPing(url);
