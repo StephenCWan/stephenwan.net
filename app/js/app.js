@@ -1,4 +1,4 @@
-angular.module('stephenwan', ['ui.state', 'ng', 'stephenwan.directives'])
+angular.module('stephenwan', ['ui.state', 'ng'])
 .config(function($stateProvider, $routeProvider, $locationProvider) {
 
 	$locationProvider.html5Mode(true);
