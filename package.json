@@ -15,13 +15,14 @@
     "url": "https://github.com/stephencwan/stephenwan.net.git"
   },
   "scripts" : {
-    "test" : ""
+    "test" : "karma start --single-run --no-auto-watch"
   },
   "dependencies" : {
     "express" : "*",
     "request" : "*"
   },
   "devDependencies" : {
-    "mocha" : "*"
+    "phantomjs" : "*",
+    "karma" : "~0.8"
   }
 }
