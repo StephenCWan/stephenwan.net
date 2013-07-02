@@ -1,5 +1,5 @@
-angular.module('stephenwan', ['ui.state', 'ng', 'stephenwan.directives'])
-.config(function($stateProvider, $routeProvider, $locationProvider) {
+angular.module('stephenwan', ['ui.state', 'ng', 'stephenwan.directives', 'angular-google-analytics'])
+.config(function($stateProvider, $routeProvider, $locationProvider, AnalyticsProvider) {
 
 	$locationProvider.html5Mode(true);
 
@@ -27,15 +27,10 @@ angular.module('stephenwan', ['ui.state', 'ng', 'stephenwan.directives'])
 		templateUrl: "partials/contact.html"
 	});
 
-}).controller('navigationCtrl', ['$scope', '$http', function($scope, $http) {
-	var loadResource = function(resource, identifier) {
-		$http({ method: "GET", url: resource }).success(function(data) {
-			$scope[identifier] = data;
-		});
-	};
+	// google analytics tracking
+	AnalyticsProvider.setAccount("UA-25136677-2");
+	AnalyticsProvider.trackPages(true);
 
-	loadResource("img/cloud.svg", "cloud");
-	loadResource("img/ironman.svg", "ironman");
-	loadResource("img/camera.svg", "camera");
-	loadResource("img/airplane.svg", "airplane");
+}).controller('navigationCtrl', ['$scope', '$http', function($scope, $http) {
+	
 }]);
