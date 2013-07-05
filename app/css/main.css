@@ -14,12 +14,12 @@ h1, h2, h3, h4, h5, h6, header {
 	font-family: 'Roboto Condensed', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-header h1, header h5 {
+header nav h1, header nav h5 {
 	margin: 0px;
 	text-align: center;
 }
 
-header h1 {
+header nav h1 {
 	font-size: 2.5em;
 	line-height: 40px;
 	color: #2980B9;
@@ -27,16 +27,16 @@ header h1 {
 	-webkit-transition: color .1s;
 }
 
-header h1:hover, header h1:active {
+header nav h1:hover, header nav h1:active {
 	color: #3498DB;
 }
 
-header h5 {
+header nav h5 {
 	font-weight: 400;
 	line-height: 20px;
 }
 
-header a {
+header nav a {
 	text-decoration: none;
 	color: #000;
 }
@@ -119,5 +119,36 @@ header.cross-section .container {
 }
 
 .text-block h1, .text-block h2, .text-block h3, .text-block h4, .text-block h5, .text-block h6 {
-	text-align: center;
+	text-align: left;
 } 
+
+article.blogpost h1 {
+	margin: 0;
+}
+
+article.blogpost time {
+	font-weight: 200;
+	font-size: 14px;
+	line-height: 10px;
+	display: block
+}
+
+article.blogpost header {
+	margin-bottom: 30px;
+}
+
+article.blogpost h2, article.blogpost .headline {
+	font-weight: 400;
+	font-size: 1.25em;
+}
+
+article.blogpost p {
+	margin: 14px 0px 14px;
+	font-size: 15px;
+	line-height: 22px;
+	font-weight: 200;
+}
+
+article.blogpost ul, article.blogpost ol {
+	font-weight: 300;
+}
