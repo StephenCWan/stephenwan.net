@@ -1,4 +1,4 @@
-var module = angular.module('stephenwan.directives', []);
+var module = angular.module('stephenwan.directives');
 
 module.directive('navLink', [function() {
 	return {

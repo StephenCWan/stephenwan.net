@@ -8,6 +8,7 @@ BELIZE HOLE
 body {
    font-family: 'Roboto', 'Helvetica Neue', Helvetica;
    font-weight: 400;
+   background-color: #f7f7f7;
 }
 
 h1, h2, h3, h4, h5, h6, header {
@@ -110,15 +111,11 @@ nav .icon svg {
 	box-shadow: inset 0px 0px 10px #333;
 }
 
-.text-block h1, .text-block h2, .text-block h3, .text-block h4, .text-block h5, .text-block h6 {
-	text-align: left;
-} 
-
 article.blogpost h1 {
 	margin: 0;
 }
 
-article.blogpost time {
+article.blogpost section time {
 	font-weight: 200;
 	font-size: 14px;
 	line-height: 10px;
@@ -129,12 +126,13 @@ article.blogpost header {
 	margin-bottom: 30px;
 }
 
-article.blogpost h2, article.blogpost .headline {
+article.blogpost section h2, article.blogpost .headline {
 	font-weight: 400;
 	font-size: 1.25em;
 }
 
 article.blogpost p {
+	text-align: justify;
 	margin: 14px 0px 14px;
 	font-size: 15px;
 	line-height: 22px;
@@ -143,6 +141,48 @@ article.blogpost p {
 
 article.blogpost ul, article.blogpost ol {
 	font-weight: 300;
+}
+
+article.blogpost footer {
+	margin-top: 40px;
+}
+
+article.blogpost footer a:link, article.blogpost footer a:visited {
+	display: block;
+	text-decoration: none;
+	background-color: #3498DB;
+	color: #fff;
+	padding: 10px 0px;
+}
+article.blogpost footer a:hover, article.blogpost footer a:active {
+	background-color: #f7f7f7;
+	color: #3498DB;
+}
+
+article.blogpost footer div a div {
+	padding: 0px 10px;
+}
+article.blogpost footer > div:first-child {
+	text-align: left;
+}
+article.blogpost footer > div:first-child time:before {
+	content: "\2190";
+	display: inline-block;
+	margin-right: 10px;
+}
+article.blogpost footer > div:last-child {
+	text-align: right;
+}
+article.blogpost footer > div:last-child time:after {
+	content: "\2192";
+	display: inline-block;
+	margin-left: 10px;
+}
+article.blogpost footer h2 {
+	margin: 0;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 footer {
