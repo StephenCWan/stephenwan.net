@@ -70,13 +70,17 @@ nav .icon svg {
 	height: 50px;
 }
 
-.cross-section {
+header.cross-section, footer.cross-section {
 	padding: 30px 0px;
 }
 
 .cross-section .container {
 	width: 900px;
-	padding: 0px 25px;
+	padding: 20px 25px 20px;
+	margin: 0 auto;
+}
+.cross-section .container-np {
+	width: 900px;
 	margin: 0 auto;
 }
 
@@ -111,11 +115,12 @@ nav .icon svg {
 	box-shadow: inset 0px 0px 10px #333;
 }
 
-article.blogpost h1 {
-	margin: 0;
+article.blogpost header h1 {
+	margin: 0px;
+	padding-top: 20px;
 }
 
-article.blogpost section time {
+article.blogpost header time {
 	font-weight: 200;
 	font-size: 14px;
 	line-height: 10px;
@@ -133,7 +138,6 @@ article.blogpost section h2, article.blogpost .headline {
 
 article.blogpost p {
 	text-align: justify;
-	margin: 14px 0px 14px;
 	font-size: 15px;
 	line-height: 22px;
 	font-weight: 200;
@@ -150,13 +154,13 @@ article.blogpost footer {
 article.blogpost footer a:link, article.blogpost footer a:visited {
 	display: block;
 	text-decoration: none;
-	background-color: #3498DB;
-	color: #fff;
+	background-color: #f7f7f7;
+	color: #2980B9;
 	padding: 10px 0px;
 }
 article.blogpost footer a:hover, article.blogpost footer a:active {
-	background-color: #f7f7f7;
-	color: #3498DB;
+	background-color: #3498DB;
+	color: #fff;
 }
 
 article.blogpost footer div a div {
