@@ -14,6 +14,9 @@ body {
 h1, h2, h3, h4, h5, h6, header {
 	font-family: 'Roboto Condensed', 'Helvetica Neue', Helvetica, sans-serif;
 }
+.container h1, h2, h3, h4, h5, h6 {
+	margin: 0px;
+}
 
 header nav h1, header nav h5 {
 	margin: 0px;
@@ -76,7 +79,7 @@ header.cross-section, footer.cross-section {
 
 .cross-section .container {
 	width: 900px;
-	padding: 20px 25px 20px;
+	padding: 30px 25px;
 	margin: 0 auto;
 }
 .cross-section .container-np {
@@ -116,7 +119,6 @@ header.cross-section, footer.cross-section {
 }
 
 article.blogpost header h1 {
-	margin: 0px;
 	padding-top: 20px;
 }
 
@@ -196,3 +198,17 @@ footer {
 footer .container div:last-child {
 	text-align: right;
 }
+
+/* pure extensions */
+.pure-button-success,
+.pure-button-error,
+.pure-button-warning,
+.pure-button-secondary {
+	color: white;
+	border-radius: 4px;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.pure-button-success {
+	background: #2ecc71; /* this is a green */
+}
+

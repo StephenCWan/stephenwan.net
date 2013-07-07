@@ -5,10 +5,15 @@ var path = require("path");
 
 var port = process.env.PORT || 8000;
 
+app.use(express.bodyParser());
+
 app.use("/js", express.static(__dirname + "/../app/js"));
 app.use("/img", express.static(__dirname + "/../app/img"));
 app.use("/css", express.static(__dirname + "/../app/css"));
 app.use("/partials", express.static(__dirname + "/../app/partials"));
+
+var contactModule = require('./endpoints/contact.js');
+contactModule.setup(app);
 
 app.all("/*", function(req, res, next) {
 	res.sendfile("index.html", { root: __dirname + "/../app" });

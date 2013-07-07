@@ -1,10 +1,23 @@
-<section class="cross-section inverse text-block" id="aboutme">
-    <div class="container">
+<section class="cross-section inverse text-block" data-ng-controller="contactCtrl">
+    <div class="container pure-g-r">
         <div class="pure-u-1">
             <h1>Contact</h1>
-            <p>
-            	I have contact information.
-            </p>
+        </div>
+        <div class="pure-u-1-2">
+        	<h3>send me a message</h3>
+        	<form class="pure-form pure-form-aligned" name="contactForm">
+        		<fieldset class="pure-group">
+    				<input type="text" name="name" placeholder="name" class="pure-input-1" data-ng-model="name" autofocus required>
+    				<input type="email" name="email" placeholder="email" class="pure-input-1" data-ng-model="email" required>
+    			</fieldset>
+    			<fieldset class="pure-group">
+    				<textarea type="text" name="message" class="pure-input-1" placeholder="send me a message" data-ng-model="message" required></textarea>
+    			</fieldset>
+        		<button type="submit" class="pure-button pure-button-success pure-input-1" data-ng-click="sendMessage()" disabled data-ng-disabled="!contactForm.$valid">Send an Email</button>
+        	</form>
+        </div>
+        <div class="pure-u-1-2">
+
         </div>
     </div>
 </section>

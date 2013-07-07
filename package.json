@@ -19,7 +19,8 @@
   },
   "dependencies" : {
     "express" : "*",
-    "request" : "*"
+    "request" : "*",
+    "node-mandrill" : "*"
   },
   "devDependencies" : {
     "phantomjs" : "*",
