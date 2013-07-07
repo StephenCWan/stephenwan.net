@@ -1,4 +1,4 @@
-var mandrill = require('node-mandrill')('_7x0nhAHFPpqjhypbWqqCA');
+var mandrill = require('node-mandrill')('SMrRQRGqRDIL9u8d9VINEg');
 
 module.exports.setup = function(app) {
 	app.post('/api/contact', function(req, res) {
