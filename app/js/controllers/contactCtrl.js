@@ -6,9 +6,9 @@ angular.module('stephenwan.controllers')
 			'name': $scope.name,
 			'email': $scope.email
 		}}).success(function(data, status) {
-			console.log('success email~');
+			
 		}).error(function(data, status) {
-			console.error('fail');
+
 		});
 	};
 }]);
