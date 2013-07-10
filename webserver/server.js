@@ -22,3 +22,15 @@ app.all("/*", function(req, res, next) {
 app.listen(port, "0.0.0.0", function() {
 	console.log("Launching stephenwan.net on port " + port);
 });
+
+var startSelfPing = function(url) {
+    setInterval(function() {
+		request(url, function(error, response, body) {
+			if (error || response.statusCode != 200) {
+				console.error("failed to ping server");
+			}
+		});
+	}, 3540000);
+};
+
+startSelfPing("http://beta.stephenwan.net");

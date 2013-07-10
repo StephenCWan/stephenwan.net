@@ -15,13 +15,15 @@ module.exports.setup = function(app) {
 					text: req.body.message
 				}
 			}, function(error, response) {
+				console.log(error);
+				console.log(response);
 				if (error) {
 					res.send({ 
 						'message' : 'mandrill failed to send email',
 						'error' : error 
 					}, 400);
 				} else {
-					res.send({ 'message' : 'success' }, 200);
+					res.send({ 'message' : 'success', 'response' : response }, 200);
 				}
 			});
 		}
