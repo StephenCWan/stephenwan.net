@@ -14,7 +14,7 @@
   <body>
     <header class="pure-g-r cross-section">
         <div class="container">
-            <nav data-ng-controller="navigationCtrl">
+            <nav>
                 <nav-link class="pure-u-1-8" data-link="/blog" data-icon-ref="img/cloud.svg" data-title="Blog"></nav-link>
                 <nav-link class="pure-u-1-8" data-link="/projects" data-icon-ref="img/ironman.svg" data-title="Projects"></nav-link>
                 <a href="/" class="pure-u-1-2 nav-main">
@@ -41,14 +41,6 @@
             </div>
        </div>
     </footer>
-
-    <script src="js/vendor/angular.min.js"></script>
-    <script src="js/vendor/angular-ui-router.min.js"></script>
-    <script src="js/vendor/angular-google-analytics.js"></script>
-    <script src="js/init.js"></script>
-    <script src="js/directives/navLinkDirective.js"></script>
-    <script src="js/controllers/blogPostCtrl.js"></script>
-    <script src="js/controllers/contactCtrl.js"></script>
-    <script src="js/app.js"></script>
+    <script data-main="js/bootstrap" src="js/vendor/require.js"></script>
   </body>
 </html>
