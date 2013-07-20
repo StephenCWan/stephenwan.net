@@ -1,6 +1,6 @@
 define(['angular', '../controllers'], function(angular, controllers) {
 
-	controllers.controller('contactCtrl', ['$scope', '$http', function($scope, $http) {
+	return ['$scope', '$http', function($scope, $http) {
 		$scope.sendMessage = function() {
 			$http({ url: '/api/contact', method: "POST", data: { 
 				'message': $scope.message,
@@ -12,6 +12,7 @@ define(['angular', '../controllers'], function(angular, controllers) {
 
 			});
 		};
-	}]);
+		$scope.$apply();
+	}];
 
 });
