@@ -1,7 +1,6 @@
-define(['angular', '../controllers'], function(angular) {
+define(['angular', '../controllers'], function(angular, controllers) {
 
-	angular.module('stephenwan.controllers')
-	.controller('contactCtrl', ['$scope', '$http', function($scope, $http) {
+	controllers.controller('contactCtrl', ['$scope', '$http', function($scope, $http) {
 		$scope.sendMessage = function() {
 			$http({ url: '/api/contact', method: "POST", data: { 
 				'message': $scope.message,

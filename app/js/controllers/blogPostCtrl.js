@@ -1,8 +1,6 @@
-define(['angular', '../controllers'], function(angular) {
+define(['angular', '../controllers'], function(angular, controllers) {
 
-
-	angular.module('stephenwan.controllers')
-	.controller('blogPostCtrl', ['$scope', function($scope) {
+	controllers.controller('blogPostCtrl', ['$scope', function($scope) {
 
 	}]);
 });

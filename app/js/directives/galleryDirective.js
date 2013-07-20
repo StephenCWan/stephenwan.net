@@ -1,7 +1,7 @@
-var module = angular.module('stephenwan.directives');
+define(['angular', '../directives'], function(angular, directives) {
+	directives.directive('gallery', [function() {
+		return {
 
-module.directive('gallery', [function() {
-	return {
-
-	}
-}]);
+		}
+	}]);
+});

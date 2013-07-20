@@ -1,3 +1,3 @@
 define(['angular'], function(angular) {
-	angular.module('stephenwan.directives', []);
+	return angular.module('stephenwan.directives', []);
 });
