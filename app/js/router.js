@@ -18,7 +18,6 @@ define(['angular', 'app'], function(angular) {
 		}).state('blog.post', {
 			url: "/:id",
 			templateUrl: "partials/blog/post.html",
-			controller: "blogPostCtrl"
 		}).state('projects', {
 			url: "/projects",
 			templateUrl: "partials/projects.html"

@@ -4,5 +4,10 @@ define(['angular'], function(angular) {
 		require(['controllers/contactCtrl'], function(ctrl) {
 			$injector.invoke(ctrl, this, { '$scope' : $scope });
 		});
-	}]);
+	}])
+	.controller('BlogPostCtrl', ['$scope', '$injector', function($scope, $injector) {
+		require(['controllers/blogPostCtrl'], function(ctrl) {
+			$injector.invoke(ctrl, this, { '$scope' : $scope });
+		});
+	}])
 });
