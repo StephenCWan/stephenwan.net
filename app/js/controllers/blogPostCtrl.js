@@ -1,4 +1,6 @@
-angular.module('stephenwan.controllers')
-.controller('blogPostCtrl', ['$scope', function($scope) {
-	
-}])
+define(['angular', '../controllers'], function(angular, controllers) {
+
+	controllers.controller('blogPostCtrl', ['$scope', function($scope) {
+
+	}]);
+});
