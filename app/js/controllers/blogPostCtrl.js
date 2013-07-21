@@ -1,8 +1,8 @@
-define(['angular', '../controllers'], function(angular, controllers) {
+define(['angular', '../controllers', '../services'], function(angular) {
 
-	return ['$scope', '$http', '$location', function($scope, $http, $location) {
+	return ['$scope', '$http', 'appConfig', function($scope, $http, appConfig) {
 		$scope.postId = 'bSzfAOgmOV';
-		$http.get('http://' + $location.$$host + ':' + $location.$$port + "/api/blogposts/" + $scope.postId).success(function(data) {
+		$http.get(appConfig.basePath + "/api/blogposts/" + $scope.postId).success(function(data) {
 			$scope.title = data.title;
 			$scope.content = data.content;
 		});
