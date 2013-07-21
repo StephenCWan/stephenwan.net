@@ -120,6 +120,7 @@ header.cross-section, footer.cross-section {
 
 article.blogpost header h1 {
 	padding-top: 20px;
+	margin: 0px;
 }
 
 article.blogpost header time {
