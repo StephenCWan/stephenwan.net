@@ -17,10 +17,11 @@
   "dependencies" : {
     "express" : "*",
     "request" : "*",
-    "node-mandrill" : "*"
+    "kaiseki" : "*"
   },
   "devDependencies" : {
     "phantomjs" : "*",
-    "karma" : "~0.8"
+    "karma" : "~0.8",
+    "node-dev" : "*"
   }
 }

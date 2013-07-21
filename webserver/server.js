@@ -15,6 +15,9 @@ app.use("/partials", express.static(__dirname + "/../app/partials"));
 var contactModule = require('./endpoints/contact.js');
 contactModule.setup(app);
 
+var blogModule = require('./endpoints/blog.js');
+blogModule.setup(app);
+
 app.all("/*", function(req, res, next) {
 	res.sendfile("index.html", { root: __dirname + "/../app" });
 });

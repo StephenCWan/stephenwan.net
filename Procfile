@@ -1,1 +1,1 @@
-web: node webserver/server.js
+web: $WEB
